@@ -638,10 +638,7 @@ h6 {
   line-height: 20px;
 }
 
-a {
-  transition: all 0.3s ease 0s;
-  text-decoration: none;
-}
+
 
 a:hover {
   color: #3EC1D5;
@@ -880,18 +877,7 @@ div#preloader {
   position: relative;
 }
 
-.navbar a,
-.navbar a:focus {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 0 10px 30px;
-  font-size: 15px;
-  font-weight: 500;
-  color: #fff;
-  white-space: nowrap;
-  transition: 0.3s;
-}
+
 
 .navbar a i,
 .navbar a:focus i {
@@ -1041,6 +1027,19 @@ div#preloader {
 .navbar-mobile .getstarted,
 .navbar-mobile .getstarted:focus {
   margin: 15px;
+}
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
 }
 
 .navbar-mobile .dropdown ul {
@@ -1215,11 +1214,18 @@ div#preloader {
   font-size: 32px;
   line-height: 1;
 }
-
+.overlay-text{
+  padding:20px;
+  text-align:center;
+  position: absolute;
+  top:50%;
+  right:50%;
+  transform:translate(50%, -50%);
+}
 #hero .carousel-indicators li {
   cursor: pointer;
 }
-
+.carousel-inner{position:relative;width:100%;overflow:hidden}.carousel-inner::after{display:block;clear:both;content:""}
 #hero .btn-get-started {
   font-weight: 500;
   font-size: 16px;
